@@ -3,6 +3,33 @@
 
 This project applies deep learning techniques for classifying land use and land cover using the EuroSAT dataset, which is based on Sentinel-2 satellite images. It explores the use of transfer learning and early stopping to enhance model performance and avoid overfitting.
 
+The Early Stopping Process:
+
+1. Data Splitting:
+The dataset is split into three parts: training, validation, and testing.
+
+2. Initial Training:
+The model is initially trained on the training dataset.
+
+3. Performance Monitoring:
+During training, the model's performance on the validation dataset is monitored.
+
+4. Early Stopping:
+When the model's performance on the validation set begins to decline or stops improving after a certain number of iterations (patience), training is stopped.
+
+5. Using the Best Parameters:
+The model parameters at the early stopping point are those used for prediction.
+
+Benefits:
+
+Avoids Overfitting:
+By stopping training before the model begins to overfit, the model's generalization ability with new data is improved.
+
+Saves Time and Resources:
+By stopping training before it is necessary, time and computational resources are saved.
+
+#########################################################################################################
+
 ## 💡 Personal Motivation
 This project is part of my ongoing exploration into the intersection between environmental sciences and artificial intelligence.
 With a background in Natural Sciences and current work in geospatial data analysis, my goal is to apply machine learning methods to understand and monitor natural systems more effectively.
